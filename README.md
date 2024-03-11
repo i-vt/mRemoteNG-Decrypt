@@ -27,7 +27,8 @@ ValueError: MAC check failed
 $ python3 mremoteng_decrypt.py -s "s1L[...]Q="
 Password: 
 ```
-Update the instructions
+### Update the instructions 
+### Add credit for the OG creator
 
 ## Disclaimer for "mRemoteNG-Decrypt":
 
