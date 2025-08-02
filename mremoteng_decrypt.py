@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-#!/usr/bin/env python3
-
 import hashlib
 import base64
 from Cryptodome.Cipher import AES
