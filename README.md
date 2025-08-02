@@ -7,29 +7,6 @@ Python script to decrypt passwords stored by mRemoteNG
 OR
 `python3 mremoteng_decrypt.py -f FILE [-p CUSTOM_PASSWORD]`
 
-
-## Todo list:
-### Try catch needed
-Catch exception to revert to default so this doesn't happen:
-```
-$ python3 mremoteng_decrypt.py -s "s1L[...]Q=" -p grace
-Traceback (most recent call last):
-  File "/home/a/mremoteng_decrypt.py", line 49, in <module>
-    main()
-  File "/home/a/mremoteng_decrypt.py", line 45, in main
-    plaintext = cipher.decrypt_and_verify(ciphertext, tag)
-  File "/usr/lib/python3/dist-packages/Cryptodome/Cipher/_mode_gcm.py", line 567, in decrypt_and_verify
-    self.verify(received_mac_tag)
-  File "/usr/lib/python3/dist-packages/Cryptodome/Cipher/_mode_gcm.py", line 508, in verify
-    raise ValueError("MAC check failed")
-ValueError: MAC check failed
-
-$ python3 mremoteng_decrypt.py -s "s1L[...]Q="
-Password: 
-```
-### Update the instructions 
-### Add credit for the OG creator
-
 ## Disclaimer for "mRemoteNG-Decrypt":
 
 ### Summary:
